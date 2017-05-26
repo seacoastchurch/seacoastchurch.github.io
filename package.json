@@ -1,7 +1,7 @@
 {
   "name": "seacoastchurch.github.io",
   "version": "1.0.0",
-  "description": "A website for seacoast church in redondo beach",
+  "description": "A website for for the Sea Coast church in Redondo Beach",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,16 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/seacoastchurch/seacoastchurch.github.io.git"
   },
-  "keywords": [
-    "church",
-    "website",
-    "seacoast",
-    "christian"
-  ],
-  "author": "Daniel Rustrum",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/seacoastchurch/seacoastchurch.github.io/issues"
   },
-  "homepage": "https://github.com/seacoastchurch/seacoastchurch.github.io#readme"
+  "homepage": "https://github.com/seacoastchurch/seacoastchurch.github.io#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "es6": "0.0.7",
+    "firebase-tools": "^3.9.0",
+    "http-server": "^0.10.0",
+    "scss-compile": "^0.1.7",
+    "vue-cli": "^2.8.2",
+    "webpack": "^2.6.1"
+  }
 }
