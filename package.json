@@ -2,9 +2,10 @@
   "name": "seacoastchurch.github.io",
   "version": "1.0.0",
   "description": "A website for for the Sea Coast church in Redondo Beach",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "nodemon server.js -e js hbs"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "es6": "0.0.7",
     "express": "^4.15.3",
-    "http-server": "^0.10.0",
+    "handlebars": "^4.0.10",
+    "http-server": "^0.10.0"
   }
 }
