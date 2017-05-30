@@ -1,31 +1,40 @@
+/*
+
+*/
+
 //Get Local Files
 const database = require('./database');
 
 // Get express Module
 const express = require('express');
-
 // Get Handlebars Module
-const hbs = require('handlebars');
+const hbs = require('hbs');
 
-// Initiate Express
+// Set Up Application
 var app = express();
+hbs.registerPartials(__dirname + '/views/partials');
+app.set('view engine', 'hbs');
 
+// Handlebar Helpers
+
+// Express Middleware
+
+// Give Access To Static Files
+app.use(express.static(__dirname + '/public'))
 
 // Set up HTTP Route Handlers
-// Root
-app.get('/',(req,res)=>{
-	res.send('<h1>helloWorld!</h1>')
-})
-
-//About
-app.get('/about',(req,res)=>{
-	res.send("About")
-});
+	// Root
+	app.get('/',(req,res)=>{
+		res.render('home');
+	});
+	//About
+	app.get('/about',(req,res)=>{
+		res.render('about');
+	});
 
 
 // Set Local Host Port
 app.listen(3000);
-
 
 
 // Test To See if Server is Activated
