@@ -4,8 +4,9 @@
   "description": "A website for for the Sea Coast church in Redondo Beach",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "nodemon server.js -e js hbs,js,html,json,md"
+    "start": "node app.js",
+    "test": "nodemon app.js -e hbs,js,html,json,md",
+    "style": "sass --watch sass:public/stylesheets"
   },
   "repository": {
     "type": "git",
