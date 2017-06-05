@@ -4,14 +4,9 @@
   "description": "A website for for the Sea Coast church in Redondo Beach",
   "main": "server.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "sudo node app.js",
     "test": "sudo nodemon app.js -e hbs,js,html,json,md",
     "style": "sass --watch sass:public/stylesheets"
-=======
-    "start": "node server.js",
-    "test": "nodemon server.js -e js hbs,js,html,json,md"
->>>>>>> master
   },
   "repository": {
     "type": "git",
@@ -24,7 +19,6 @@
   },
   "homepage": "https://github.com/seacoastchurch/seacoastchurch.github.io#readme",
   "devDependencies": {
-<<<<<<< HEAD
     "compression": "^1.6.2",
     "express": "^4.15.3",
     "express-mailer": "^0.3.1",
@@ -32,12 +26,10 @@
     "hbs": "^4.0.1",
     "helmet": "^3.6.1"
   },
-  "dependencies": {}
-=======
+  "dependencies": {
     "express": "^4.15.3",
     "express-mailer": "^0.3.1",
     "firebase": "^4.1.0",
     "hbs": "^4.0.1"
   }
->>>>>>> master
 }
