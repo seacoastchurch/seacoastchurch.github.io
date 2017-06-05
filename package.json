@@ -1,8 +1,8 @@
 {
   "name": "seacoastchurch.github.io",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A website for for the Sea Coast church in Redondo Beach",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "start": "sudo node app.js",
     "test": "sudo nodemon app.js -e hbs,js,html,json,md",
