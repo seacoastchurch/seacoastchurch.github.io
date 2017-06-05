@@ -18,18 +18,12 @@
     "url": "https://github.com/seacoastchurch/seacoastchurch.github.io/issues"
   },
   "homepage": "https://github.com/seacoastchurch/seacoastchurch.github.io#readme",
-  "devDependencies": {
+  "dependencies": {
     "compression": "^1.6.2",
     "express": "^4.15.3",
     "express-mailer": "^0.3.1",
     "firebase": "^4.1.0",
     "hbs": "^4.0.1",
     "helmet": "^3.6.1"
-  },
-  "dependencies": {
-    "express": "^4.15.3",
-    "express-mailer": "^0.3.1",
-    "firebase": "^4.1.0",
-    "hbs": "^4.0.1"
   }
 }
