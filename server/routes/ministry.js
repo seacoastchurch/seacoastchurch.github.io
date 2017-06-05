@@ -6,7 +6,6 @@ module.exports = {
 	"call": (app) => {
 		app.get('/ministries',(req,res)=>{
 			res.render('ministry');
-			// To-Do: Add Data and Bindings
 		});
 			// Individual Ministries
 			app.get('/youth',(req,res)=>{
