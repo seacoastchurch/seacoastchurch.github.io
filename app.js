@@ -60,7 +60,6 @@
 	queryHandler.call(app);
 	webToggle.call(app);
 	tabNamer.call(app, hbs);
-	checkForPage.call(app,database);
 
 // Render Action Modal
 var actionEnabled = true;
