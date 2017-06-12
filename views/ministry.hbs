@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>home</title>
-</head>
-<body>
-	<div>{{> webNavigation }}</div>
-</body>
+	{{> head}}
+	<body>
+		{{> webNavigation }}
+		<h1>ministries</h1>
+		{{!-- Mens --}}
+		<div>
+			<a href="/ministries/mens">mens</a>
+		</div>
+		{{!-- Womens --}}
+		<div>
+			<a href="/ministries/womens">womens</a>
+		</div>
+		{{!-- College and Career --}}
+		<div>
+			<a href="/ministries/collegeandcareer">c and c</a>
+		</div>
+		{{!-- Youth --}}
+		<div>
+			<a href="/ministries/youth">youth</a>
+		</div>
+		{{> action}}
+	</body>
+	{{> foot}}
 </html>

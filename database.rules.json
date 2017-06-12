@@ -1,10 +1,6 @@
 {
   "rules": {
-    ".read": "auth != null",
+    ".read": "true",
     ".write": "auth != null"
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> master

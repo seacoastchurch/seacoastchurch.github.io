@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>home</title>
-</head>
-<body>
-	<div>{{> webNavigation }}</div>
-</body>
+	{{> head}}
+	<body>
+		{{> webNavigation }}
+		<h1>Hello</h1>
+		<!-- To-Do: Search -->
+		<!-- To-Do: Dropdown For search bar -->
+		<!-- Do: List of Groups Thumbnails -->
+		<ul>		
+			{{#each groupList}}
+			<li class="group">
+				<a href="/lifegroups/{{url}}">
+					<p>{{ title }}</p>
+					<p>{{ descriptionBrief }}</p>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+		{{> action}}
+	</body>
+	{{> foot}}
 </html>
