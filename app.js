@@ -29,10 +29,9 @@
 	const firebase = require('firebase');
 	// Get Favicon Module
 	const favicon = require('serve-favicon');
-	// Get Path Module
-	const path = require('path');
 
 // Initialize and Set up Database
+// To-Do: Limit This To Be Exexuted When Needed
 	firebase.initializeApp({
 		apiKey: "AIzaSyARRdqdJbSWBeR7Kdu37Fad-zQduJtNJh0",
 	    authDomain: "website-61d7f.firebaseapp.com",
@@ -46,11 +45,11 @@
 
 // Set Up Application
 	var app = express();
-	app.use(favicon(path.join(__dirname, 'public', 'assets', 'favicon.ico')));
-	hbs.registerPartials(__dirname + '/views/partials/components');
-	hbs.registerPartials(__dirname + '/views/partials/generals');
+	app.use(favicon(__dirname + '/public/assets/favicon.ico'));
+	hbs.registerPartials(__dirname + '/views/partials');
 	app.set('port',process.env.PORT || 3000);
 	app.set('view engine', 'hbs');
+	app.locals.onMobile = true;
 
 // Security
 	app.use(helmet());
@@ -60,7 +59,6 @@
 	queryHandler.call(app);
 	webToggle.call(app);
 	tabNamer.call(app, hbs);
-	checkForPage.call(app,database);
 
 // Render Action Modal
 var actionEnabled = true;
